@@ -16,7 +16,7 @@ create_directory() {
 create_description_file() {
     local dir_path=$1
     local description=$2
-    echo "$description" > "$dir_path/description.md"
+    echo "$description" > "$dir_path/description.txt"
     echo "Created description file in: $dir_path"
 }
 
@@ -30,6 +30,9 @@ DIRECTORIES=(
     ["$BASE_DIR/lib/src/constants"]="Directory for constant values used across the project"
     ["$BASE_DIR/lib/src/exceptions"]="Directory for custom exception classes"
     ["$BASE_DIR/lib/src/features"]="Directory for feature-specific code"
+    ["$BASE_DIR/lib/src/features/authentication/models"]="Directory for MVC model classes"
+    ["$BASE_DIR/lib/src/features/authentication/views"]="Directory for MVC view classes"
+    ["$BASE_DIR/lib/src/features/authentication/controllers"]="Directory for MVC controller classes"
     ["$BASE_DIR/lib/src/localization"]="Directory for localization files"
     ["$BASE_DIR/lib/src/routing"]="Directory for routing and navigation-related code"
     ["$BASE_DIR/lib/src/utils"]="Directory for utility functions and helpers"
